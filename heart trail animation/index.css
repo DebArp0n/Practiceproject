@@ -1,0 +1,33 @@
+body{
+    margin: o;
+    height: 100vh;
+    background-color:white;
+}
+
+span{
+    background: url("https://cdn4.iconfinder.com/data/icons/gestures-10/32/15-1024.png");
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    background-size: cover;
+    pointer-events: none;
+    left:50%;
+    right:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    animation: animates 10s linear;
+}
+
+@keyframes animates {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter :hue-rotate(0)
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(700deg)
+    }
+    
+}
