@@ -67,5 +67,4 @@ function removeItem(idx) {
     renderItem()
     saveItem()
 }
-
 document.addEventListener("DOMContentLoaded", loadItems)
